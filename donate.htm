@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Masibambisane</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="../../../Business/NPO/Masibambisane/NPC/Screenshot_20230905_145921.jpg" alt="Masibambisane Logo" height="50">
+                <h1>Masibambisane for Old Aged Citizen</h1>
+            </div>
+            <!-- Hamburger / Close button -->
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- DONATE SECTION -->
+    <main class="container donate">
+        <section>
+            <h2>Donate</h2>
+            <ol>
+                <!-- SUCCESS CRITERIA & MEASURABLE OUTCOMES -->
+                <li>
+                    <h3>Success Criteria and Measurable Outcomes</h3>
+                    <details>
+                        <summary><strong>(a) Success Criteria</strong></summary>
+                        <ul>
+                            <li>Have trained staff able to work with elderly.</li>
+                            <li>Two staff trained in first aid.</li>
+                            <li>Have our own facility.</li>
+                            <li>Keep elderly safe.</li>
+                            <li>Ensure elderly have food and tea.</li>
+                            <li>Provide transport for elderly to and from home.</li>
+                            <li>Find people trained to teach sewing, crochet, and knitting.</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary><strong>(b) Measurable Outcomes</strong></summary>
+                        <p>We started with 18 elderly participants; currently we have 60, engaging in weekly activities including sewing, knitting, gardening, netball, choir, walking, and more.</p>
+                    </details>
+                </li>
+                <!-- AFFILIATIONS -->
+                <li>
+                    <h3>Affiliations with Other Organizations</h3>
+                    <details>
+                        <p>We are affiliated with the Meals on Wheels Organization, which supports our activities. Below are some illustrations of donated items.</p>
+                    </details>
+                </li>
+            </ol>
+            <!-- DONATION IMAGES -->
+            <div class="picture-gallery">
+                <figure>
+                    <img id="image" src="../../../Business/NPO/Masibambisane/NPO/Pictures/IMG-20231017-WA0004.jpg" alt="Donated pies" height="200" width="400">
+                    <img id="image" src="../../../Business/NPO/Masibambisane/NPO/Pictures/IMG-20231017-WA0002.jpg" alt="Donated pies" height="200" width="400"><br>
+                    <figcaption>Donated pies from Meals on Wheels</figcaption>
+                </figure>
+                <figure>
+                    <img id="image" src="../../../Business/NPO/Masibambisane/NPO/Pictures/IMG-20230911-WA0034.jpg" alt="Donated T-shirts" height="200" width="400">
+                    <img id="image" src="../../../Business/NPO/Masibambisane/NPO/Pictures/IMG-20230912-WA0057.jpg" alt="Donated T-shirts" height="200" width="400"> <br>
+                    <figcaption>Donated T-shirts distributed to elderly</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="socialmedia">
+            <a href="https://facebook.com"><img src="../../../../Pictures/images (8).jpeg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="../../../../Pictures/images (9).jpeg" alt="Twitter"></a>
+        </div>
+        <p>&copy; 2025 Masibambisane. All Rights Reserved.</p>
+    </footer>
+    <!-- MENU SCRIPT -->
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+        const overlay = document.querySelector(".overlay");
+        const links = document.querySelectorAll(".menu a");
+        function closeMenu() {
+            menu.classList.remove("active");
+            toggle.classList.remove("active");
+            overlay.classList.remove("active");
+        }
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            toggle.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+        links.forEach(link => {
+            link.addEventListener("click", closeMenu);
+        });
+        overlay.addEventListener("click", closeMenu);
+    </script>
+</body>
+</html>
