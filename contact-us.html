@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Masibambisane For Old Age Citizens NPO</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Masibambisane NPO supports elderly citizens with care, community programs, and resources to improve their quality of life.">
+    <meta name="author" content="Motswadisi Abram Noe">
+
+    <!-- Open Graph Meta Tags (Social Media Preview) -->
+    <meta property="og:title" content="Masibambisane For Old Age Citizens NPO">
+    <meta property="og:description" content="Masibambisane NPO is dedicated to supporting elderly citizens with care, health programs, and community initiatives to ensure a dignified and happy life.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abram-noe.github.io/masibambisane.github.io">
+    <meta property="og:image" content="https://abram-noe.github.io/masibambisane.github.io/images/food_parcel/M-20251224.jpg">
+
+    <!-- Optional: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Masibambisane For Old Age Citizens NPO">
+    <meta name="twitter:description" content="Empowering elderly citizens through care, community programs, and support to enhance their quality of life.">
+    <meta name="twitter:image" content="https://abram-noe.github.io/masibambisane.github.io/images/food_parcel/M-20251224.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://abram-noe.github.io/masibambisane.github.io/images/favicon.png">
+    <link rel="icon" sizes="32x32" href="favicon_32.png">
+    <link rel="icon" sizes="64x64" href="favicon_64.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="https://abram-noe.github.io/masibambisane.github.io/images/logo.jpg" alt="Masibambisane Logo" height="50">
+                <h1>Masibambisane for Old Aged Citizen</h1>
+            </div>
+            <!-- Hamburger / Close button -->
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Contact Section -->
+    <div class="container">
+        <!-- Left Info Section -->
+        <div class="left">
+            <h2>Get In Touch With Us Now!</h2>
+            <div class="info">
+                <div>
+                    <h3>📞 Phone Number</h3>
+                    <p>Zanele Nkosi<br>+27 76 052 7875</p>
+                    <p>MA Noe<br>+27 67 137 3177</p>
+                </div>
+                <div>
+                    <h3>📧 Email</h3>
+                    <p>masibambisane_for_old_age@outlook.com<br>zanelenkosi1010@gmail.com<br>modisenoe@outlook.com</p>
+                </div>
+                <div>
+                    <h3>📍 Location</h3>
+                    <p>15570 Extension 9 Phase 01<br>Stredford, Orange Farm, 1805, Gauteng, South Africa</p>
+                </div>
+                <div>
+                    <h3>⏰ Working Hours</h3>
+                    <p>Monday to Friday<br>09:00 AM To 04:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <!-- Right Contact Form -->
+        <div class="right">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="First Name *" required>
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Mobile No *" required>
+                <input type="email" placeholder="Email ID *" required>
+                <textarea placeholder="Message"></textarea>
+                <div class="captcha">
+                    <input type="text" placeholder="Type the characters *" required>
+                    <img src="../../../../Pictures/images (1).png" alt="captcha" width="60px">
+                </div>
+                <button type="submit">Submit ➤</button>
+            </form>
+        </div>
+    </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="https://abram-noe.github.io/masibambisane.github.io/images/facebook_logo.png" alt="Facebook black logo">
+                </a>
+            <a href="https://twitter.com">
+                <img src="https://abram-noe.github.io/masibambisane.github.io/images/twitter_logo.png" alt="Twitter black logo">
+                </a>
+        </section>
+        <p>&copy; 2025 Masibambisane. All Rights Reserved.</p>
+    </footer>
+    <!-- MENU SCRIPT -->
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+        const overlay = document.querySelector(".overlay");
+        const links = document.querySelectorAll(".menu a");
+        function closeMenu() {
+            menu.classList.remove("active");
+            toggle.classList.remove("active");
+            overlay.classList.remove("active");
+        }
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            toggle.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+        links.forEach(link => {
+            link.addEventListener("click", closeMenu);
+        });
+        overlay.addEventListener("click", closeMenu);
+    </script>
+</body>
+</html>
